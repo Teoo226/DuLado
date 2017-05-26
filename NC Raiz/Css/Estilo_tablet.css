@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	/*display:block;
+	width:1024px;
+	height:295px; */
+	background-image:url(../Multimidia/imagens/fundo.png);
+	background-repeat:repeat;
+}
+
+#cabecalho {
+	top:10px;
+	width:730px;
+	height:295px;
+	background-color:#09F;
+	margin:auto;
+	background-image:url(../Multimidia/imagens/capa.png);
+	background-position:center;
+}
+	
+nav#menu a{
+	color:#FFF;
+	text-decoration:none;
+
+}
+nav#menu ul{
+	list-style:none;
+	text-transform:uppercase;
+	position:relative;
+	top:234px;
+	left:2px;
+	width:710px;
+	margin:auto;
+	}
+nav#menu li{
+	display:inline-block;
+	padding:8px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9px;
+	position:relative;
+	border-radius:5px;
+	margin-bottom:3px;
+	}
+	
+.servico{background-color: #f58634;}	
+.servico:hover{background-color:#E3680B;}	
+
+.produto{background-color:#2E75B6;}		
+.produto:hover{background-color:#03c;}
+
+nav#menu{
+	display:block;	
+}
+nav#menu h1{
+	display:none;
+}
+
+nav#menu a:hover{
+	color:#FFF;
+}
+nav#menu li ul{
+	position:absolute;
+	display:none;
+	left:-42px;
+	top:45px;
+}
+nav#menu li:hover ul{
+	display:block;
+	}
+nav#menu li ul li{
+	width:160px;
+	box-shadow:1px 1px 4px #000;
+	font-size:15px;}
+
+#corpo{
+	position:relative;
+	width:730px;
+	top:22px;
+	height:2200px;
+	margin:auto;
+	background-color:#F8F8F8;
+	border:2px solid #dfdfdf;
+}
+
+.categoriaservico{
+	float:left;
+	font-size:16px;
+	color:#f58634;
+	font-family:"Arial Black", Gadget, sans-serif;
+	width:730px;
+	padding:15px;
+	
+	}
+.categoriaproduto{
+	float:left;
+	font-size:16px;
+	color:#03c;
+	font-family:"Arial Black", Gadget, sans-serif;
+	width:1275px;
+	padding:15px;
+
+	}
+.p_box{
+	    float:left;
+		width:160px;
+		font-size:14px;	
+	}
+.logo_box{
+	    float:right;
+		width:30px;
+		height:30px;
+		background-color:#fff;
+		display:block;
+		margin-right:28px;}
+		
+.link_box{
+	    float:right;
+		width:55px;
+		height:21px;
+		background-color:#fff;
+		color:#006df0;
+		display:block;
+		margin:25px 1px 2px 0px;
+		padding:3px 2px 2px 4px;
+		border:1px solid #006df0;
+		border-radius:6px;
+		list-style:none;	
+	}
+	
+.link_box a{
+	color:#006df0;
+	text-decoration:none;
+}
+.box_servico{
+	    float:left;
+		width:180px;
+		height:75px;
+		background-color:#fff;
+		margin:10px 4px 0px 10px;
+		padding-top:7px;
+		padding-left:7px;
+		border:1px solid #f58634;
+		position:relative;
+		color:#606062;
+		font-size:14px;
+	}
+.box_produto{
+	    float:left;
+		width:225px;
+		height:90px;
+		background-color:#fff;
+		margin:5px 0px 0px 5px;
+		padding-top:7px;
+		padding-left:7px;
+		border:1px solid #03c;
+		position:relative;
+		color:#606062;
+	}
+#seta{
+	margin-left:1110px;
+	margin-bottom:50px;
+	bottom:0px;
+	position:fixed;
+}
+		
+#rodape{
+	width:730px;
+	height:100px;
+	background-color:#347AE4;
+	bottom:0px;
+	margin:auto;
+}
+#redes_logo{
+	display:block;
+	
+	}
+	
+

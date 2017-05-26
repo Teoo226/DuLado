@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-color:#EBEBEB;
+	color:#630;
+	
+}
+#centralizar{
+	position:absolute;
+	margin:auto;	
+}
+#barra {
+	  	width:637px;
+		height:60px;
+		background-color:#f58634;
+		margin:10px 0px 0px 0px;
+		color:#fff;
+		alignment-adjust:auto;
+		vertical-align:middle;
+}
+
+#titulo{
+	text-align:center;
+	display:block;
+	position:relative;
+	padding-top:18px;
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:23px;
+	}	
+	
+#corpo{	    
+		width:628px;
+		height:280px;
+		background-color:#fff;
+		padding-top:7px;
+		padding-left:7px;
+		border:1px solid #f58634;
+		position:relative;
+		font-size:18px;			
+}
+
+.linhabaixa{
+	border-bottom:#999 solid 1px;	
+}
+
+.caixatexto{
+	height:30px;
+	background-color:#F5F5F5;
+	color:#333;
+	font-size:14px;
+	font-family:Verdana, Geneva, sans-serif;
+	border:#CCC solid 1px;
+	
+	}

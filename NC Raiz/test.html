@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cadastro</title>
+<style>
+#pop{display:none;position:absolute;top:30%;left:40%;margin-left:-150px;margin-top:-100px;padding:10px;width:650px;height:475px;border:1px solid #d0d0d0}
+</style>
+</head>
+<body>
+<div id="pop">
+<a href="#" onclick="document.getElementById('pop').style.display='none';">[Fechar]</a>
+<br />
+	<div id="centralizar"> 
+<img src="Multimidia/imagens/capa.png" width="637" height="147"/>
+<div id="barra">
+<div id="titulo">Cadastre-se </div>
+ </div>
+
+<div id="corpo">
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="611" border="0" cellspacing="3">
+    <tr >
+      <td width="143" class="linhabaixa">Nome Completo</td>
+      <td width="455"><label for="textfield"></label>
+        <span id="sprytextfield1">
+        <label for="text1"></label>
+        <input name="text1" type="text" class="caixatexto" id="text1" size="50" maxlength="40" />
+      <span class="textfieldRequiredMsg">Um valor é necessário.</span></span></td>
+    </tr>
+    <tr>
+      <td>Categoria</td>
+      <td><p>
+        <label>
+          <input type="radio" name="Categoria" value="1" id="Categoria_0" />
+          Serviços</label>
+        <label>
+          <input type="radio" name="Categoria" value="2" id="Categoria_1" />
+          Produtos</label>
+      </p></td>
+    </tr>
+    <tr>
+      <td>Profissão</td>
+      <td><span id="sprytextfield2">
+        <label for="text2"></label>
+        <input name="text2" type="text" class="caixatexto" id="text2" size="50" maxlength="30" />
+      <span class="textfieldRequiredMsg">Um valor é necessário.</span></span></td>
+    </tr>
+    <tr>
+      <td>Endereço</td>
+      <td><label for="textfield3"></label>
+        <span id="sprytextfield3">
+        <label for="text3"></label>
+        <input name="text3" type="text" class="caixatexto" id="text3" size="50" maxlength="50" />
+      <span class="textfieldRequiredMsg">Um valor é necessário.</span></span></td>
+    </tr>
+    <tr>
+      <td>Telefone</td>
+      <td><span id="sprytextfield4">
+      <label for="text4"></label>
+      <input name="text4" type="text" class="caixatexto" id="text4" />
+      <span class="textfieldInvalidFormatMsg">Formato inválido.</span></span></td>
+    </tr>
+    <tr>
+      <td>Celular</td>
+      <td><span id="sprytextfield5">
+      <label for="text5"></label>
+      <input name="text5" type="text" class="caixatexto" id="text5" />
+      <span class="textfieldRequiredMsg">Numero inválido</span><span class="textfieldInvalidFormatMsg">Formato inválido.</span></span></td>
+    </tr>
+    <tr>
+      <td>Link para produtos</td>
+      <td><span id="sprytextfield6">
+      <label for="text6"></label>
+      <input name="text6" type="text" class="caixatexto" id="text6" />
+      <span class="textfieldRequiredMsg">Um valor é necessário.</span><span class="textfieldInvalidFormatMsg">Link inválido</span></span></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" value="Finalizar" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</form>
+</div>
+</div>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "phone_number", {format:"phone_custom", pattern:"(00)00000-0000", hint:"(63) 0000-0000", useCharacterMasking:true, isRequired:false});
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5", "phone_number", {format:"phone_custom", pattern:"(00)00000-0000", hint:"(63) 9 0000-0000", useCharacterMasking:true});
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6", "url");
+</script>
+ 
+</div>
+ 
+<a href="#" onclick="document.getElementById('pop').style.display='block';">Mostra</a>
+
+</body>
+</html>
